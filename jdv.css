@@ -1,0 +1,72 @@
+body {
+    margin: 10px;
+}
+
+header {
+    background-color: #EB6864;
+    color: white;
+    padding: 15px;
+}
+
+header h1 {
+    border-bottom: 3px solid white;
+    padding-bottom: 20px;
+}
+
+.bg-light {
+    border: 2px solid #e04640;
+}
+
+main {
+    height: 320px;
+}
+
+footer {
+    text-align: center;
+    border-top: solid 3px #EB6864;
+    padding-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: larger;
+}
+
+#esquerda ul a{
+    text-align: center;
+}
+#direita{
+    margin-top: 20px;
+}
+
+#esquerda{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* PXP */
+
+#vez{
+    /* text-align: center; */
+    margin: auto;
+    margin-top: 20px;
+    width: 252px;
+}
+
+#vez>p{
+    margin-right: 10px;
+    float: left;
+}
+
+.espaco{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #EB6864;
+    float: left;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.tabuleiro{
+    width: 252px;
+    text-align: center;
+    margin: auto;
+}
