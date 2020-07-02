@@ -45,10 +45,11 @@ footer {
 /* PXP */
 
 #vez{
-    /* text-align: center; */
-    margin: auto;
+    /* margin: auto; */
+    margin-left: 235px;
     margin-top: 20px;
     width: 252px;
+    height: 45px;
 }
 
 #vez>p{
@@ -69,4 +70,16 @@ footer {
     width: 252px;
     text-align: center;
     margin: auto;
+}
+
+img{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+    
+}
+
+#vez img{
+    height: 30px;
+    width: 30px;
 }
