@@ -2,7 +2,8 @@
 
 <head>
 
-    <title> Jogo da Velha!</title>
+    <title> Jogo da Velha</title>
+    <link rel="stylesheet" href="modo.css"></link>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="jdv.css">
 
@@ -37,18 +38,18 @@
         <div class="row">
 
             <div id="esquerda" class="col-6">
-              <h2>Modo de Jogo</h2></br>
+              <h2 id="mdj">Modo de Jogo</h2>
               <nav>
-                <ul>
-                  <a href="pxp.html">JOGADOR vs JOGADOR</a><br><br>
-                  <a href="pxc.html">JOGADOR vs COMPUTADOR</a></br>
+                <ul class="navModo">
+                  <a id="jogxjog" class="navbar-brand" href="pxp.html">JOGADOR vs JOGADOR</a><br>
+                  <a id="jogxcpu" class="navbar-brand" href="pxcpu.html">JOGADOR vs COMPUTADOR</a>
                 </ul>
               </nav>
-            </br><p>ESCOLHA SEU MODO DE JOGO E SE DIVIRTA!</p>
+              <p id="divirta">ESCOLHA O MODO DE JOGO E SE DIVIRTA!</p>
             </div>
 
             <div id="direita" class="col-6">
-              <h2>História</h2>
+              <h2 id="historia">História</h2>
               <p>O seu nome <b>Jogo da Velha</b> originou-se na Inglaterra quando mulheres ao fim de tarde se reuniam para tomar o chá, bordar e brincar. O jogo da velha era jogado pelas senhoras de mais idade já que as mesmas não enxergavam bem, e não podiam então realizar seus bordados; a opção de diversão então era o Jogo da Velha.
               <h2>Regras</h2>
               <p>Os jogadores jogam alternadamente, uma marcação por vez.</br>
@@ -62,7 +63,7 @@
 
     <footer>
 
-        <p> &copy; Desenvolvido por Emanuel César dos Santos, Gustavo Henrique Alves e Marcos Vinicius Alves - 2020 </p>
+        <p> &copy; Desenvolvido por Emanoel Santos, Gustavo Henrique Alves e Marcos Vinicius - 2020 </p>
 
     </footer>
 

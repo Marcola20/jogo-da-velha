@@ -2,7 +2,7 @@
 
 <head>
 
-    <title> Jogo da Velha </title>
+    <title> Jogo da Velha</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="jdv.css">
 
@@ -26,24 +26,24 @@
               <a class="nav-link" href="pxp.html"> Jogador vs Jogador </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pxcpu.html"> Jogador vs Computador </a>
+              <a class="nav-link" href="pxcpu.html"> Jogador vs Computador</a>
             </li>
           </ul>
           
         </div>
       </nav>
 
-    <main class="mainPXP">
+    <main class="mainPXC">
 
       <div class="row">
 
-        <div id="esquerdaPXP" class="col-4">
+        <div id="esqPxC" class="col-4">
 
           <h2> INSTRUÇÕES </h2>
           <p>
-            • O "X" sempre começará.</br>
-            • O objetivo é conseguir 3 "O" ou 3 "X" </br> em linha (horizontal, vertical ou diagonal).</br>
-            • Cada jogador fará uma jogada por vez.</br>
+            • O "X" começará e ao clicar em "reiniciar" irá alterar.</br>
+            • O objetivo é conseguir 3 "O" ou 3 "X" em linha </br> (horizontal, vertical ou diagonal).</br>
+            • O jogador fará a jogada e a CPU jogará em seguida.</br>
             • Ao final você pode reiniciar e começar novamente.</br></br>
             • Para voltar ao inicio clique <a href="jdv.html">aqui</a></br> ou em "JOGO DA VELHA" na barra de navegação.
           </p>
@@ -52,34 +52,32 @@
 
         <div class="col-4">
 
-          <div id="vez">
+          <div id="pxcpu">
 
-            <p>VEZ DO JOGADOR:</p>
-            <img src="" border="0" height="30">
-
-          </div>
-
-          <div class="tabuleiro">
-
-            <div id="a1" class="espaco" jogada=""></div>
-            <div id="a2" class="espaco" jogada=""></div>
-            <div id="a3" class="espaco" jogada=""></div>
-
-            <div id="b1" class="espaco" jogada=""></div>
-            <div id="b2" class="espaco" jogada=""></div>
-            <div id="b3" class="espaco" jogada=""></div>
-
-            <div id="c1" class="espaco" jogada=""></div>
-            <div id="c2" class="espaco" jogada=""></div>
-            <div id="c3" class="espaco" jogada=""></div>
+            <p id="vezPXC">QUEM COMEÇA:</p>
 
           </div>
+
+          <div id="jogo">
+
+            <div id="a1" class="tabu" onclick="jogar(1)"></div>
+            <div id="a2" class="tabu" onclick="jogar(2)"></div>
+            <div id="a3" class="tabu" onclick="jogar(3)"></div>
+
+            <div id="b1" class="tabu" onclick="jogar(4)"></div>
+            <div id="b2" class="tabu" onclick="jogar(5)"></div>
+            <div id="b3" class="tabu" onclick="jogar(6)"></div>
+
+            <div id="c1" class="tabu" onclick="jogar(7)"></div>
+            <div id="c2" class="tabu" onclick="jogar(8)"></div>
+            <div id="c3" class="tabu" onclick="jogar(9)"></div>
           
-          <button type="button" class="btn btn-outline-primary" id="botaoPP" onclick="reset()">REINICIAR</button>
-
         </div>
 
+        <button type="button" class="btn btn-outline-primary" id="botao" onclick="iniciar()">REINICIAR</button>
+
       </div>
+
     </main>
 
     <footer>
@@ -87,7 +85,8 @@
         <p> &copy; Desenvolvido por Emanoel Santos, Gustavo Henrique Alves e Marcos Vinicius - 2020 </p>
 
     </footer>
-<script src="jdv.js"></script>
+
 </body>
+<script src="pxc.js"></script>
 
 </html>

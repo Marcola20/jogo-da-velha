@@ -50,7 +50,7 @@ function inicializarEspacos(){
     }   
  }
 
- function verificarVencedor(){
+ async function verificarVencedor(){
 
 var a1 = document.getElementById("a1").getAttribute("jogada");
 var a2 = document.getElementById("a2").getAttribute("jogada");
@@ -75,9 +75,28 @@ if(((a1 == b1 && a1 == c1) || (a1 == a2 && a1 == a3) || (a1 == b2 && a1 == c3)) 
     vencedor = c3;
 }
 
+
 if (vencedor != ""){
     gameOver = true;
-    alert("O ganhador foi o: '" + vencedor + "'")
-} 
 
+    await sleep(50);
+
+    alert("O vencedor foi o: '" + vencedor + "'")   
+    
+}else if(a1 != "" && a2 != "" && a3 != "" && b1 != "" && b2 != "" && b3 != "" && c1 != "" && c2 != "" && c3 != "" ){
+    
+    await sleep(50);
+
+    alert("VISSSH! DEU VELHA!")
+}
+}
+
+function sleep(ms){
+
+    return new Promise(espera => setTimeout(espera, ms));
+
+}
+
+function reset(){
+    document.location.reload(true);
 }
